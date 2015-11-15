@@ -28,6 +28,7 @@
 	      </ul>
 	      <form class="navbar-form navbar-left" role="search" action="/articles/search" method="post">
 			{!! csrf_field() !!}
+          	<input type="text" class="hidden" name="_filter" value="false">
 	        <div class="form-group">
 	          <input type="text" class="form-control" name="query" placeholder="Search">
 	        </div>
